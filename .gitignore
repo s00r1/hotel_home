@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+
+# Build output
+/dist/
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+
+# OS-generated files
+.DS_Store
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
