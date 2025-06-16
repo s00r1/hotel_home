@@ -37,3 +37,12 @@ Les contributions sont les bienvenues. Merci de proposer vos améliorations via 
 3. Commitez vos modifications puis poussez la branche sur votre fork.
 4. Ouvrez une Pull Request décrivant vos améliorations.
 
+
+## Autres langues
+
+- [English](README_en.md)
+- [العربية](README_ar.md)
+
+## Licence
+
+Ce projet est distribué sous licence MIT. Voir le fichier [LICENSE](LICENSE).
