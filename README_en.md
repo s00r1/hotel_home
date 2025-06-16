@@ -12,7 +12,28 @@ The site offers a modern interface with interactive cards and a preview popover 
 
 The page only relies on HTML, CSS and JavaScript. No installation is required.
 
+## Run Locally
+
+To preview the page locally you can use a static server such as `npx serve`:
+
+1. Make sure Node.js is installed.
+2. Run `npx serve` from the project root.
+3. Open the provided URL in your browser.
+
+### File Structure
+
+- `index.html`: main page of the portal.
+- `style.css`: site specific styles.
+- `css/normalize.css`: CSS normalization.
+- `script.js`: interactive behavior.
+- `favicon.ico`: site icon.
+
 ## Contributing
 
-Contributions are welcome. Feel free to open Pull Requests with your improvements.
+Contributions are welcome. Feel free to open Pull Requests with your improvements. To do so:
+
+1. Fork this repository.
+2. Create a branch for your changes.
+3. Commit the modifications and push the branch to your fork.
+4. Open a Pull Request describing your improvements.
 
