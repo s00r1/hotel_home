@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hôtel Grill</title>
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+
+<body>
+
+<!-- Fond animé -->
+<div class="background">
+  <div class="gradient-blob"></div>
+  <div class="gradient-blob"></div>
+  <div class="gradient-blob"></div>
+</div>
+
+<main>
+  <h1>Hôtel Grill</h1>
+  <p class="subtitle">Gérez vos réservations et vos demandes facilement.</p>
+
+  <div class="cards-container">
+
+    <!-- Carte 1 -->
+    <div class="card" data-rotation-factor="2" onclick="window.open('https://buanderie-reservation-production.up.railway.app/', '_blank')">
+      <div class="card-content">
+        <h2>Buanderie</h2>
+        <h2>Réservation</h2>
+        <p>Réservez votre tour à la buanderie pour pouvoir utiliser le lave-linge ou le sèche-linge. Vous êtes limités à 3 tournées de chaque machine par jour.</p>
+        <div class="card-footer">
+          <button class="card-button" data-preview="https://buanderie-reservation-production.up.railway.app/">Aperçu</button>
+          <div class="card-icon">→</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="card" data-rotation-factor="2" onclick="window.open('https://calendrier-f3xq.vercel.app/', '_blank')">
+      <div class="card-content">
+        <h2>Cuisine</h2>
+        <h2>Calendrier Ménage</h2>
+        <p>Consultez le calendrier du mois pour le ménage de la cuisine des résidents de l'hôtel.</p>
+        <div class="card-footer">
+          <button class="card-button" data-preview="https://calendrier-f3xq.vercel.app/">Aperçu</button>
+          <div class="card-icon">→</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="card" data-rotation-factor="2" onclick="window.open('https://s00r1.github.io/hotel_avis/', '_blank')">
+      <div class="card-content">
+        <h2>Avis</h2>
+        <h2>Signalements divers</h2>
+        <p>Donnez votre avis, vos suggestions, ou faites un signalement pour un problème technique ou des problèmes constatés.</p>
+        <div class="card-footer">
+          <button class="card-button" data-preview="https://hotelgrill.neocities.org/avis/">Aperçu</button>
+          <div class="card-icon">→</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Aperçu popover à côté du bouton -->
+<div id="preview-popover" style="display:none; position:absolute; z-index:99999;">
+  <div class="popover-inner" style="background:#222;border-radius:16px;box-shadow:0 8px 32px #000b;padding:0.4rem;max-width:360px;max-height:380px;border:2px solid #fff2;">
+    <iframe id="preview-frame" src="" style="width:340px; height:340px; border-radius:10px; border:none; background:#fff; box-shadow:0 2px 18px #0005;"></iframe>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
