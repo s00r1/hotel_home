@@ -37,3 +37,12 @@ Contributions are welcome. Feel free to open Pull Requests with your improvement
 3. Commit the modifications and push the branch to your fork.
 4. Open a Pull Request describing your improvements.
 
+
+## Other languages
+
+- [Français](README.md)
+- [العربية](README_ar.md)
+
+## License
+
+This project is distributed under the MIT License. See the [LICENSE](LICENSE) file.
