@@ -73,7 +73,7 @@ h1 {
 .subtitle {
   font-size: 1rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin: 0;
   opacity: 0.8;
 }
 
@@ -266,10 +266,12 @@ h1 {
   gap: 5px; /* petit espace entre les lignes */
 }
 
-.subtitle {
-  margin: 0;
-}
 
+.subtitles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 .centered-container {
   height: 100vh; /* prend toute la hauteur */
