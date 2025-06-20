@@ -61,7 +61,12 @@ body {
   100% { transform: translate(-2%, -2%) scale(0.98);}
 }
 
-main { width: 100%; padding: 2rem 1rem; position: relative; z-index: 1; }
+main {
+  width: 100%;
+  padding: 0 1rem 2rem; /* retire l'espace en haut */
+  position: relative;
+  z-index: 1;
+}
 
 h1 {
   font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.1;
@@ -236,7 +241,7 @@ h1 {
   main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5vh 2rem;
+    padding: 0 2rem 5vh; /* alignement en haut */
   }
   h1 { font-size: 4.5rem; }
   .subtitle { font-size: 1.25rem; }
