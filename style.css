@@ -236,7 +236,7 @@ h1 {
   main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10vh 2rem;
+    padding: 5vh 2rem;
   }
   h1 { font-size: 4.5rem; }
   .subtitle { font-size: 1.25rem; }
@@ -274,7 +274,7 @@ h1 {
 }
 
 .centered-container {
-  height: 100vh; /* prend toute la hauteur */
+  height: auto; /* ajustement pour réduire l'espace vertical */
 }
 
 
