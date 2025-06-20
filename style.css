@@ -274,3 +274,9 @@ h1 {
 .centered-container {
   height: 100vh; /* prend toute la hauteur */
 }
+
+
+.centered-container p,
+.centered-container h1 {
+  margin: 5px 0; /* réduit l'espace vertical */
+}
