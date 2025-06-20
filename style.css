@@ -255,3 +255,22 @@ h1 {
   .card p { transform: translateZ(25px);}
   .card-footer { transform: translateZ(20px);}
 }
+
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre HORIZONTALEMENT */
+  justify-content: center; /* centre VERTICALEMENT si tu mets height */
+  text-align: center; /* pour centrer le texte */
+  gap: 5px; /* petit espace entre les lignes */
+}
+
+.subtitle {
+  margin: 0;
+}
+
+
+.centered-container {
+  height: 100vh; /* prend toute la hauteur */
+}
