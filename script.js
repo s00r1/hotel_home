@@ -3,16 +3,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const popover = document.getElementById("preview-popover");
   const previewFrame = document.getElementById("preview-frame");
+  const modal = document.getElementById("preview-modal");
+  const modalFrame = modal ? modal.querySelector("iframe") : null;
+  const closeBtn = modal ? modal.querySelector("#close-preview") : null;
   const buttons = document.querySelectorAll(".card-button");
 
   let isOverButton = false;
   let isOverPopover = false;
   let closeTimeout;
 
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("show");
+      modalFrame.src = "";
+    });
+  }
+
   buttons.forEach((button) => {
     const url = button.getAttribute("data-preview") || null;
 
     if (url) {
+
       button.addEventListener("mouseenter", (e) => {
         isOverButton = true;
         clearTimeout(closeTimeout);
@@ -37,6 +48,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         popover.style.top = `${top}px`;
         popover.style.left = `${left}px`;
+      });
+
+      // Gestion tactile pour les petits écrans
+      button.addEventListener("click", (ev) => {
+        if (window.innerWidth <= 600 && modal && modalFrame) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          modalFrame.src = url;
+          modal.classList.add("show");
+        }
       });
 
       button.addEventListener("mouseleave", () => {
